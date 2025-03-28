@@ -68,7 +68,7 @@ button:focus-visible {
   padding: 0.3rem 0.6rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-}`
+}
 .header a:hover{
   color:#747bff;
 }
