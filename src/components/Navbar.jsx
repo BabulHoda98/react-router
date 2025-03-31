@@ -6,13 +6,19 @@ const Navbar = () => {
     <header className='header'>
         <h3>Logo</h3>
         <ul>
-            <li NavLink to="">Home</li>
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
         </ul>
         <ul>
-            <li NavLink to="">About</li>
+        <li>
+              <NavLink to="/about">About</NavLink>
+            </li>
         </ul>
         <ul>
-            <li NavLink to="">Contact</li>
+        <li>
+              <NavLink to="/contact">Contactus</NavLink>
+            </li>
         </ul>
     </header>
   )
