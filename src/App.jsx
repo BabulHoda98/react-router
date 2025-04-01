@@ -2,10 +2,11 @@ import React from 'react'
 import { Route, Routes } from 'react-router'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Home from "./pages/home";
-import About from "./pages/about";
-import Contact from "./pages/contact";
-
+// import Home from "./pages/home";
+// import About from "./pages/about";
+// import Contact from "./pages/contact";
+// import Product from './pages/product';
+import {Home,About,Contact,Product} from "./pages"
 const App = () => {
   return (
     <>
@@ -14,7 +15,9 @@ const App = () => {
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
-        <Route path='/product/:productName' element={<product/>}/>
+
+        {/* Dynamig Routing (URL Parameters) */}
+        <Route path='/product/:productName' element={<Product/>}/>
       </Routes>
       <Footer/>
     </>
